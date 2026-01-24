@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;margin: 0;;
+    
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("assets/img/bg2.webp");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.main .box{
+    height: 100vh;width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+nav img{
+    color: red;
+    width: 100px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    min-height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family:  Helvetica, sans-serif;
+    gap: 20px;
+    padding: 0 30px;
+}
+.hero> :nth-child(1){
+    font-weight: 800;
+    font-size: 50px;
+    z-index: 10;
+    text-align: center;
+}
+.hero :nth-child(2){
+    font-weight: 550;
+    font-size: 24px;
+    z-index: 10;
+    text-align: center;
+}
+.hero :nth-child(3){
+    font-weight: 450;
+    font-size: 15px;
+    z-index: 10;
+    text-align: center;
+}
+.separate{
+    height: 6px;
+    background-color: rgb(43, 43, 43);
+}
+.btn{
+    padding: 4px 9px;
+    font-weight: bold;
+    background-color: rgba(23, 23, 23, 0.4);
+}
+.lang{
+    color: white;
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.redbtn{
+    background-color: red;
+    color: white;
+    padding: 15px 44px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.redbtnsi{
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px;
+}
+.main input{
+    padding: 17px 4px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.5);
+    border: 0.2px solid rgba(246, 238, 238, 0.3);
+}
+.trending {
+  color: white;
+  padding: 20px 0;
+  max-width: 1200px;   
+  margin: 0 auto; 
+}
+
+.trending h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.trending-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.trending-row::-webkit-scrollbar {
+  display: none; /* hide scrollbar */
+}
+
+.card {
+  position: relative;
+  min-width: 150px; /* card width */
+  max-width: 150px;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.rank {
+  position: absolute;
+  bottom: 15px;
+  left: 1px;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: 2px black; 
+}
+.reasons {
+  color: white;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reasons h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.reasons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive */
+  gap: 20px;
+}
+
+.reason-card {
+  background: linear-gradient(145deg, #1a1a2e, #16213e); /* dark gradient */
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  min-height: 200px;
+  transition: transform 0.3s ease;
+}
+.reason-card:hover {
+  transform: translateY(-50px); /* hover effect */
+}
+.reason-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.reason-card p {
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+.reason-card img {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+.faq{
+    background: black;
+    color: aliceblue;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.faq h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.faqbox :hover{
+    background-color: #616060;
+}
+.faqbox{
+    transition: all 1s ease-out;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: #2b2b2b;
+     padding: 24px;
+     margin-bottom: 16px;
+     cursor: pointer;
+}
+.last {
+  text-align: center;
+  color: white;
+  margin: 40px auto;
+  max-width: 600px;
+}
+.below{
+    margin-top: 15px;
+    padding: 17px 4px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.5);
+    border: 0.2px solid rgba(246, 238, 238, 0.3);
+}
+.last .txt {
+  font-size: 18px;
+  margin-bottom: 30px;
+  display: block;
+}
+footer {
+  max-width: 60vw;
+  margin: 50px auto;
+  color: #999;
+  font-size: 14px;
+}
+
+footer .call {
+  margin-bottom: 20px;
+}
+
+footer .call a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.fitem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fitem a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.fitem a:hover {
+  text-decoration: underline;
+}
+
+.language select {
+  background: transparent;
+  border: 1px solid #999;
+  color: #999;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.country {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
